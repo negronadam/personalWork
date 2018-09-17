@@ -4,6 +4,8 @@ public class LikesOrDislikes {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		
 		System.out.println("Hi! I am Adam Negron and here are some of my Likes and Dislikes:");
 		System.out.println("\nLikes:				Dislikes:\n");
 		System.out.println("Oranges				Clowns");
