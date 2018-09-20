@@ -10,7 +10,7 @@ public class Bones {
 		Scanner input = new Scanner(System.in);
 		System.out.println("How many bones have you broken?");
 		bones = input.nextInt();
-		System.out.println("You have broken" + bones + "Bone(s)");
+		System.out.println("You have broken"+ bones +"Bone(s)");
 	}
 
 }
