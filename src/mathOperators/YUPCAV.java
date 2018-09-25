@@ -11,6 +11,7 @@ public class YUPCAV {
 		age = input.nextInt();
 		votingAge = 18 - age;
 		System.out.println("You can vote in: " + votingAge + " Years!");
+		System.out.println("Update 1.0.1a");
 	}
 
 }
