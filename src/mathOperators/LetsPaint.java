@@ -4,6 +4,7 @@ public class LetsPaint {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//Testing source control!
 		int lengthInFeet;
 		int widthInFeet;
 		int sFPG = 150;
