@@ -9,6 +9,7 @@ public class LetsPaint {
 		int widthInFeet;
 		int sFPG = 150;
 		int area;
+		int gallonsNeeded;
 		Scanner input = new Scanner(System.in);
 		System.out.println("Please enter the length of the room in feet");
 		lengthInFeet = input.nextInt();
@@ -17,6 +18,8 @@ public class LetsPaint {
 		System.out.println("The dimensions of the room is: " + lengthInFeet + "ft" + " by " + widthInFeet + "ft");
 		area = lengthInFeet * widthInFeet;
 		System.out.println("The amount of wall that still needs to be painted is: " + area + "Sqft");
+		gallonsNeeded = area / sFPG
+		System.out.println("You will also need" + gallonsNeeded + "gallons of paint.");
 		input.close();
 		
 	}
