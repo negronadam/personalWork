@@ -12,6 +12,7 @@ public class phoneNumber {
 		System.out.println("Please enter your phone number");
 		phoneNumber = input.nextLong();
 		System.out.println("Your phone number is: " + phoneNumber);
+		 
 		input.close();
 	}
 
