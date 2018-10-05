@@ -10,6 +10,7 @@ public class AreaWithDoor {
 	int areaWallNoDoor = 999;
 	public void AreaWithDoor()
 	{
+		//Testing Source Control
 		Scanner newinput = new Scanner(System.in);
 		System.out.println("What is the base of the wall?");
 		base = newinput.nextInt();
