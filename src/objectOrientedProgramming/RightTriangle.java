@@ -5,6 +5,8 @@ public class RightTriangle {
 	Scanner input = new Scanner(System.in);
 	private int base;
 	private int height;
+	private double hypot;
+	private double area;
 
 	public RightTriangle(int base, int height) {
 
@@ -39,19 +41,23 @@ public class RightTriangle {
 	}
 	public double hypot()
 	{
+		hypot = Math.hypot(base, height);
 		return Math.hypot(base, height);
 		
 	}
+	
+	
 
 	public double perimeter()
 	{
-		return base;
+		return hypot + base + height;
 		
 	}
 	
 	public double area()
 	{
-		return base;
+		area = (base * height)/2;
+		return area;
 		
 	}
 }
