@@ -13,6 +13,7 @@ public class RightTriangleTest {
 		triangle.inheight();
 		System.out.println("The height of your triangle is: " + triangle.height());
 		System.out.println("The hypotenuse of your triangle is: " + triangle.hypot());
+		
 
 	}
 
