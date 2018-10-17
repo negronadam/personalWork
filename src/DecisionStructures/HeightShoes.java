@@ -12,7 +12,7 @@ public class HeightShoes {
 		System.out.println("What is your height");
 		height = input.nextInt();
 		System.out.println(shoeSize == height);
-		if (shoeSize != height)
+		if (shoeSize >= height && 1 == 1)
 		{
 			System.out.println("Wow! You have big feet!");
 		}
