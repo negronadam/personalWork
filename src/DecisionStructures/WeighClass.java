@@ -55,6 +55,9 @@ public class WeighClass {
 			default:
 				System.out.println("You have not chosen a valid Planet!");
 			break;
+			
 		}
+		
+		input.close();
 	}
 }
