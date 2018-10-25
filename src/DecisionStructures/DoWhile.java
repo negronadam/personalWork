@@ -22,6 +22,7 @@ public class DoWhile {
 			num = input.nextInt();
 			
 		}while(num != 9999);
+		
 	}
 
 }
