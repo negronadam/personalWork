@@ -7,6 +7,7 @@ public class MoreLoopStuff {
 		Scanner input = new Scanner(System.in);
 		int counter  = 0;
 		int favoriteNum = 0;
+		int total = 0;
 		/*
 		System.out.println("How many hellos would you like?");
 		counter = input.nextInt();
@@ -24,8 +25,8 @@ public class MoreLoopStuff {
 		{
 			System.out.println("Please enter a positive integer.");
 		}
-		*/
-		System.out.println("How many numbers would you like to print?");
+		/*
+		/*System.out.println("How many numbers would you like to print?");
 		counter = input.nextInt();
 		System.out.println("What is your favorite number?");
 		favoriteNum = input.nextInt();
@@ -33,6 +34,16 @@ public class MoreLoopStuff {
 		{
 			System.out.println(favoriteNum + "Hello");
 		}
+		*/
+		
+		for (counter = 1; counter <= 5; counter = counter + 1)
+		{
+			System.out.println("What is your favorite number?");
+			int num = input.nextInt();
+			total += num;
+		}
+		
+		System.out.println("Total: " + total);
 		
 		input.close();
 	}
