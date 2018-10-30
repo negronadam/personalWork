@@ -27,12 +27,14 @@ public class NestedLoops {
 			 * 
 			 */
 			
-			for (int j = 1; j <= 60; j++)
+		int rowDec = 6;
+		
+			for (int column = 1; column <= 6; column++)
 			{
-				if(60 % j == 0);
+				for (int row = 1; row <= 6; row++)
 				{
-					System.out.println(j);
-				}
+					System.out.println(row++ + "");
+				}System.out.println("");
 		}
 
 	}

@@ -13,12 +13,27 @@ public class Calculator {
 		System.out.println("4. Round Up");
 		System.out.println("5. Round Down");
 		System.out.println("6. Quit");
+		option = input.nextInt();
 		switch(option)
 		{
 			case 1:
 				
 				System.out.println("You have chosen Is It A Right Triangle!");
-				System.out.println("Please enter the base of the triangle");
+				System.out.println("What are the angles of the triangle?");
+				System.out.println("Angle 1: ");
+				double angle1 = input.nextDouble();
+				System.out.println("Angle 2: ");
+				double angle2 = input.nextDouble();
+				System.out.println("Angle 3: ");
+				double angle3 = input.nextDouble();
+				if(angle1 != 90 || angle2 != 90 || angle3 != 90)
+				{
+					System.out.println("It is not a triangle");
+				}
+				else
+				{
+					System.out.println("That is a triangle!");
+				}
 			break;
 			
 			case 2:
