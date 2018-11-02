@@ -5,24 +5,29 @@ public class NewCalc {
 	public static void main(String[] args) {
 		Scanner input = new Scanner("System.in");
 		// TODO Auto-generated method stub
-		
+		int choice = 0;
 		System.out.println("What would you like to do?");
 		
-		int choice = input.nextInt();
-		
-		
-		while(choice == 0)
+		while(choice <= 6)
 		{
-			while(choice == 1)
-			{
-				System.out.println("You chose Right Triangle!");
-			}
 			
-			while (choice == 2)
+			if (choice <= 6)
 			{
-				System.out.println("You have chosen Powers!");
+			while(choice != 0 || choice <= 6);
+			{
+				if (choice == 1)
+				{
+					System.out.println("Right Triangle!");
+				}
+				
+				if (choice == 2)
+				{
+					System.out.println("You have chosen something else!");
+				}
+			}
 			}
 		}
+		
 	}
 
 }
