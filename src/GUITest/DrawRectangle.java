@@ -16,6 +16,7 @@ public class DrawRectangle extends JComponent {
 		g2.draw(box);
 		g2.setColor(Color.MAGENTA);
 		g2.drawString("Hello! I am Adam's Program!", 50, 100);
+		g2.drawString("This is a program!", 70, 120);
 	}
 	
 }
