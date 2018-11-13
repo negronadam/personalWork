@@ -10,6 +10,7 @@ public class ActivityToLower {
 		test1 = input.nextLine();
 		System.out.println(test1.toLowerCase());
 		System.out.println(test1);
+		input.close();
 	}
 
 }
