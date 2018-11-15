@@ -7,6 +7,7 @@ public class NumberOfLetters {
 		Scanner input = new Scanner(System.in);
 		String test = "Test";
 		System.out.println("Please enter a sentence.");
+		
 	}
 
 }
