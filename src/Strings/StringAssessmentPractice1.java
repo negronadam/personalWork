@@ -16,7 +16,7 @@ public class StringAssessmentPractice1 {
 				wordCount++;
 			}
 		}
-		
+		//I am using (wordCount + 1) because the program will ignore the last space.
 		System.out.println("There are " + (wordCount + 1) + " words in your sentence!");
 	}
 
