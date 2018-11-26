@@ -6,10 +6,10 @@ public class Scores {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
-		Random generator = new Random(5985);
+		Random generator = new Random();
 		int[] grades = new int[250];
 		int min = 0;
-		int max = 100;
+		int max = 1000;
 		int randomNum = 0;
 		int largest = 0;
 		for(int i = 0; i < 250; i++)
