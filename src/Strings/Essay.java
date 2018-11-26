@@ -8,15 +8,12 @@ public class Essay {
 	public Essay()
 	{
 		String authorsNameFirst = "test";
-		String authorsNameSecond = "test";
-		String authorsNameThird = "test";
 		String essayText = "test";
 	}
 	
-	public void setAuthorsName(String authorsNameFirstX, String authorsNameSecondX )
+	public void setAuthorsName(String authorsNameFirstX )
 	{
 		authorsNameFirst.equals(authorsNameFirstX);
-		authorsNameThird.equals(authorsNameSecondX);
 	}
 	
 	public String getFirstName()
