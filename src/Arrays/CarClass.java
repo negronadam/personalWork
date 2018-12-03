@@ -9,7 +9,7 @@ public class CarClass {
  public CarClass ()
     {
         mpg = 20;
-        capacity = 20; 
+        capacity = 20;
         fuel = 20;
         odometer = 0;
     }
