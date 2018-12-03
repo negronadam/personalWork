@@ -34,7 +34,6 @@ public class RentACar {
 			double aFuel = input.nextDouble();
 			System.out.println("What is the number of miles on the Odometer?");
 			double aOdometer = input.nextDouble();
-			car[i].CarClass(aMPG, aCapacity, aFuel, aOdometer);
 		}
 		while(quit == 1)
 		{
@@ -48,7 +47,6 @@ public class RentACar {
 					System.out.println("You chose to drive the car...");
 					System.out.println("How many miles will you drive?");
 					int miles = input.nextInt();
-					cars[].driveCar(miles);
 					System.out.println("You drove the car for: " + miles + " miles!");
 					System.out.println();
 				break;
