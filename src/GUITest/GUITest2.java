@@ -7,14 +7,16 @@ import javax.swing.JFrame;
 public class GUITest2 {
 
 	public static void main(String[] args) {
-		JFrame frame = new JFrame();
-		frame.setSize(300, 400);
-		frame.setTitle("My Second GUI!");
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		DrawRectangle component = new DrawRectangle();
-		frame.add(component);
-		frame.setVisible(true);
-		
+		while(1==1)
+		{
+			JFrame frame = new JFrame();
+			frame.setSize(300, 400);
+			frame.setTitle("My Second GUI!");
+			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			DrawRectangle component = new DrawRectangle();
+			frame.add(component);
+			frame.setVisible(true);
+		}
 
 	}
 
