@@ -19,7 +19,7 @@ public class NewRectangle extends JComponent {
 		{
 			if(movement == 'w')
 			{
-				box2.translate();
+				//This is where movement stuffs is going to go.
 			}
 		}
 	}
