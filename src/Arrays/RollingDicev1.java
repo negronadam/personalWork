@@ -16,12 +16,12 @@ public class RollingDicev1 {
 		System.out.println("How many times should each studnet roll the die?");
 		int timesRolled = input.nextInt();
 		int sum = 0;
-		double wages[][] = new double[MAXROW][MAXCOL];
+		int rolls[][] = new int[MAXROW][MAXCOL];
 		for(int i = 0; i < MAXROW; i++)
 		{
 			for(int a = 0; a < MAXCOL; a++)
 			{
-				wages[i][a] = (generator.nextInt(100-1+1));
+				rolls[i][a] = generator.nextInt(MAXCOL - 1 + 1);
 			}
 		}
 		
@@ -29,8 +29,8 @@ public class RollingDicev1 {
 		{
 			for(int a = 0; a < MAXCOL; a++)
 			{
-				sum += wages[i][a];
-				System.out.print(wages[i][a] + "\t");
+				sum += rolls[i][a];
+				System.out.print(rolls[i][a] + "\t");
 			}
 			System.out.println();
 		}
