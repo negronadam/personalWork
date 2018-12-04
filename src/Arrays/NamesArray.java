@@ -11,6 +11,7 @@ public class NamesArray {
 		final int COLUMN = 3;
 		String[][] names = new String[ROW][COLUMN];
 		Friend[][] friends = new Friend[18][5];
+		//Fix later!!!!
 		/*
 		for(int i = 0; i < ROW; i++)
 		{

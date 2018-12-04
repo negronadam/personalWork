@@ -7,8 +7,7 @@ import javax.swing.JFrame;
 public class GUITest2 {
 
 	public static void main(String[] args) {
-		while(1==1)
-		{
+		
 			JFrame frame = new JFrame();
 			frame.setSize(300, 400);
 			frame.setTitle("My Second GUI!");
@@ -16,7 +15,6 @@ public class GUITest2 {
 			DrawRectangle component = new DrawRectangle();
 			frame.add(component);
 			frame.setVisible(true);
-		}
 
 	}
 
