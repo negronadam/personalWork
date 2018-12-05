@@ -28,9 +28,9 @@ public class GradeBookMain {
 		
 		for(int i = 0; i < numStudents; i++)
 		{
+			
 			for(int a = 0; a < numTests; a++)
 			{
-				System.out.print(nameStudent[a]);
 				System.out.print(Gradebook[i][a] + "\t");
 			}
 			System.out.println(" ");

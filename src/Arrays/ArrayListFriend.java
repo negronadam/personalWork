@@ -10,7 +10,7 @@ public class ArrayListFriend {
 		for(int i = 0; i < 3; i++)
 		{
 			System.out.println("Please enter the name and age of a friend");
-			friend.add(0, (new Friend(input.nextLine(), input.nextInt())));
+			friend.add(new Friend(input.nextLine(), input.nextInt()));
 		}
 		
 		for(int a = 0; a < friend.size(); a++)
