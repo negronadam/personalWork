@@ -5,6 +5,7 @@ public class Circle {
 	    public Circle() {
 	        radius = 10;
 	    }
+	    
 	    public Circle(double xRadius) {
 	        if (xRadius > 0)
 	            radius = xRadius;
