@@ -10,6 +10,7 @@ public class SearchRectangles {
 		Random generator = new Random();
 		ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
 		boolean numIsIn = false;
+		int rectangleNumber = 0;
 		for(int i = 0; i < 1000; i++)
 		{
 			rectangles.add(new Rectangle(1 + generator.nextInt(499 - 1 + 1), 1 + generator.nextInt(499 - 1 + 1)));
@@ -22,6 +23,7 @@ public class SearchRectangles {
 			if(rectangles.get(a).getWidth() == num)
 			{
 				numIsIn = true;
+				rectangleNumber = rectangles.indexOf(a);
 			}
 		}
 		
@@ -31,7 +33,7 @@ public class SearchRectangles {
 		{
 			System.out.println("Length of rectangle " + m + " : " + rectangles.get(m).getLength() + " Widgth of rectangle " + m + " : " + rectangles.get(m).getWidth());
 		}
-		
+		System.out.println("The number: " + num + " Occurs at rectangle: " + rectangleNumber + " most recently!");
 	}
 
 }
