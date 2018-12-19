@@ -1,11 +1,11 @@
-package Arrays;
+package DecisionStructures;
 import java.util.ArrayList;
-public class MoreArrayListPractice {
+public class EarlyArrays {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ArrayList array = new ArrayList();
-		//Work on this later
+		
+		
 	}
 
 }
