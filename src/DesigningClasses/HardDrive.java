@@ -1,12 +1,17 @@
 package DesigningClasses;
 import java.util.ArrayList;
 public class HardDrive {
-	private String Name;
+	private String name;
 	private double totalCapacity;
 	private double freeSpace;
 	ArrayList<Double> files = new ArrayList<Double>();
-	public HardDrive()
+	
+	public HardDrive(String xName, Double xCapacity)
 	{
+		name = xName;
+		totalCapacity = xCapacity;
+		freeSpace = xCapacity;
+		files = new ArrayList<Double>();
 		
 	}
 	
@@ -31,7 +36,38 @@ public class HardDrive {
 		files.remove(xIndex);
 	}
 	
+	public void isFull()
+	{
+		if(freeSpace == 0)
+		{
+			System.out.println("The hard drive is full!");
+		}
+		
+		else
+		{
+			System.out.println("The hard drive is not full!");
+		}
+	}
 	
+	public void isEmpty()
+	{
+		if(freeSpace > 0)
+		{
+			System.out.println("The hard drive is not full!");
+		}
+		
+		else
+		{
+			System.out.println("The hard drive is full!");
+		}
+	}
 	
+	public void checkHardDrive()
+	{
+		for(int a = 0; a < files.size(); a++)
+		{
+			System.out.println(files.get(a));
+		}
+	}
 	
 }
