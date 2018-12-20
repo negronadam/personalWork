@@ -4,6 +4,7 @@ public class HardDriveTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//Fix this stuff later.
 		Scanner input = new Scanner(System.in);
 		int menuChoice = 0;
 		boolean programIsRunning = true;
