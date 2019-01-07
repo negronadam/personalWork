@@ -1,6 +1,6 @@
 package Interfaces;
 
-public class Rectangle {
+public class Rectangle implements Shapes {
 	 private double length;
 	    private double width;
 	public Rectangle()
