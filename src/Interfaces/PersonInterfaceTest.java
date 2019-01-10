@@ -6,5 +6,6 @@ public class PersonInterfaceTest {
 		// TODO Auto-generated method stub
 		ArrayList<Person> person = new ArrayList<Person>();
 	}
+	
 
 }
