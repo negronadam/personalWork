@@ -67,4 +67,9 @@ public class Quadrilateral {
 	 return s1 + s2 + s3 + s4;
  }
  
+ public String toString()
+ {
+	 return "This ia a quadrilateral with dimensions of Side 1: " + s1 + " Side 2: " + s2 + " Side 3: " + s3 + " Side 4: " + s4;
+ }
+ 
 }

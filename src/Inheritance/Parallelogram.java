@@ -17,4 +17,9 @@ public class Parallelogram extends Quadrilateral {
 	{
 		return super.getSide1() * height;
 	}
+	
+	public String toString()
+	{
+		return "This is a Parallelogram with a height of " + height + super.toString();
+	}
 }
