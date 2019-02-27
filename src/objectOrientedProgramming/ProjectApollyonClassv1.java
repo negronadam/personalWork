@@ -6,14 +6,9 @@ import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
-import java.net.CookieHandler;
-import java.net.CookieManager;
-import java.net.URL;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 import javax.net.ssl.HttpsURLConnection;
-import java.net.HttpURLConnection;
 public class ProjectApollyonClassv1 {
 	String[] string = new String[100];
 	Scanner input = new Scanner(System.in);
@@ -61,12 +56,12 @@ public class ProjectApollyonClassv1 {
 		}
 	}
 	
-	public void signInWebsite(URL xUrl, String xUsername, String xPassword)
+	public void signInWebsite(String xUrl, String xUsername, String xPassword) throws MalformedURLException
 	{
-		URL url = xUrl;
+		String url = xUrl;
 		String username = xUsername;
 		String password = xPassword;
 		
-		HttpURLConnection connection = new HttpURLConnection(url);
+		URL connection = new URL(url);
 	}
 }
