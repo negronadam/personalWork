@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class HouseArrayTest {
 
 	public static void main(String[] args) {
+		/*
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		Random generator = new Random();
@@ -30,6 +31,12 @@ public class HouseArrayTest {
 		}
 		
 		input.close();
+		*/
+		
+		while(1==1)
+		{
+			System.o
+		}
 	}
 
 }

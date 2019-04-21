@@ -4,7 +4,7 @@ public class HardDrive {
 	private String name;
 	private double totalCapacity;
 	private double freeSpace;
-	ArrayList<Double> files = new ArrayList<Double>();
+	private ArrayList<Double> files;
 	
 	public HardDrive(String xName, Double xCapacity)
 	{

@@ -10,11 +10,12 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.net.ssl.HttpsURLConnection;
 public class ProjectApollyonClassv1 {
-	String[] string = new String[100];
+	ArrayList<String>questions = new ArrayList<String>();
 	Scanner input = new Scanner(System.in);
+	private String statemtent;
 	public ProjectApollyonClassv1()
 	{
-		
+		questions.add("Who are you?");
 	}
 	
 	public void sayHello()
@@ -24,7 +25,7 @@ public class ProjectApollyonClassv1 {
 	
 	public int getStringsRemembered()
 	{
-		return string.length;
+		return questions.size();
 	}
 	
 	public void addMemory()
@@ -56,6 +57,18 @@ public class ProjectApollyonClassv1 {
 		}
 	}
 	
+	public String getGreeting()
+	{
+		return "Hello! Let's chat...";
+	}
+	
+	public String getResponse(String statement)
+	{
+		if(statement.equals(questions.get(1)));
+		{
+			return "I am Apollyon, a global peace keeping initiative created by Adam Negron";
+		}
+	}
 	public void signInWebsite(String xUrl, String xUsername, String xPassword) throws MalformedURLException
 	{
 		String url = xUrl;

@@ -12,6 +12,7 @@ public class ClassSort {
 		boolean addingStudents = false;
 		boolean removingStudents = false;
 		boolean sortingStudents = false;
+		boolean nameFound = false;
 		int menuChoice = 999;
 			while(programIsRunning)
 			{
@@ -42,6 +43,30 @@ public class ClassSort {
 					break;
 					
 					case 2:
+							System.out.println("How many students would you like to remove?");
+							int numStudentsRemove = input.nextInt();
+							for(int a = 0; a < numStudentsRemove; a++)
+							{
+								System.out.println("What is the name of the student you would like to remove?");
+								input.nextLine();
+								String studentName = input.nextLine();
+								for(int x = 0; x < students1.size(); x++)
+								{
+									if(students1.get(a).getName().equals(studentName))
+									{
+										students1.remove(a);
+										System.out.println(studentName + " has been removed from the student list!");
+										nameFound = true;
+										
+									}
+									else if(nameFound == false)
+									{
+										System.out.println("We could not find that name!");
+									}
+									
+								}
+							}
+							
 						
 					break;
 					

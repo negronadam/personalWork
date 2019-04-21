@@ -1,6 +1,7 @@
 package DesigningClasses;
-
+import java.util.List;
 public class Student {
+	private List classes;
 	private String name;
 	private int age;
 	private int grade;
