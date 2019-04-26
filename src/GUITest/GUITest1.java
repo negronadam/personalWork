@@ -8,12 +8,16 @@ public class GUITest1 {
 
 	public static void main(String[] args) {
 		
+		while(1==1)
+		{
+			
 		JFrame frame = new JFrame("Adam's First GUI");
 	       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	       frame.setSize(1280,720);
 	       JButton button = new JButton("Press");
 	       frame.getContentPane().add(button);
 	       frame.setVisible(true);
+		}
 		
 	}
 
