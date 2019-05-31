@@ -63,7 +63,7 @@ public class Sigma extends Application {
 		table.getColumns().add(xAxis);
 		table.getColumns().add(yAxis);
 		meanAnswer = new Label();
-		meanAnswer.setText();
+		meanAnswer.setText("text");
 		text = new TextField("");
 		
 		HBox hBox = new HBox();

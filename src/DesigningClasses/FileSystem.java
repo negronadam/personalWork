@@ -43,4 +43,9 @@ public class FileSystem {
 		 return false;
 	 }
 	 
+	 public void format()
+	 {
+		size = size - spaceLeft; 
+	 }
+	 
 }

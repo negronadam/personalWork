@@ -1,38 +1,56 @@
 package objectOrientedProgramming;
-import java.net.*;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-public class Apollyon {
+import java.awt.BorderLayout;
+import java.util.ArrayList;
 
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTextField;
+import javax.swing.JTextPane;
+import javax.swing.UIManager;
+import javax.swing.text.StyledDocument;
+
+public class Apollyon {
+	private static ArrayList<String> wordDatabase;
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		sayHello();
-		System.out.println("The current date and time is: " + getTime());
+		new Apollyon();
 	}
 	
-	public static void sayHello()
-	{
-		System.out.println("Hello! I am Apollyon0");
-	}
+	public JFrame frame;
+	public JTextPane console;
+	public JTextField input;
+	public JScrollPane scrollpane;
 	
-	public static void runCodeBreaker()
+	public StyledDocument document;
+	
+	boolean trace = false;
+	
+	public Apollyon()
 	{
+		try
+		{
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		}
+		catch(Exception e) {}
 		
-	}
-
-
-	public static void accessWebsite(String website)
-	{
+		frame = new JFrame();
+		frame.setTitle("Apollyon");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
+		console = new JTextPane();
+		
+		
+		
+		
+		input = new JTextField();
+		
+		scrollpane = new JScrollPane(console);
+		frame.add(input, BorderLayout.SOUTH);
+		frame.add(scrollpane, BorderLayout.CENTER);
+		frame.setSize(640, 480);
+		frame.setLocationRelativeTo(null);
+		frame.setResizable(false);
+		frame.setVisible(true);
 	}
-	
-	public static String getTime()
-	{
-		DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
-		Date dateobj = new Date();
-		return df.format(dateobj);
-	}
-
 }
