@@ -1,20 +1,23 @@
 package OtherPrograms;
+import javafx.*;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javafx.*;
-public class ENSServer extends Application {
-	
+public class ENS_Server extends Application {
 	//Stages
 	Stage window;
+	
 	//Scenes
-	Scene scene;
+	Scene scene1;
 	//Labels
-	Label title;
-	Label test;
+	Label header1;
+	//Buttons
+	Button sendButton;
+	//Textfields
+	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -24,15 +27,13 @@ public class ENSServer extends Application {
 	public void start(Stage primaryStage) throws Exception
 	{
 		window = primaryStage;
-		primaryStage.setTitle("ENS-SERVER VERSION 0.0.1");
-		title = new Label("Welcome to the ENS Server Program!");
-		test = new Label("Hello! This is a test!");
+		primaryStage.setTitle("ENS-Server VERSION 0.0.1");
+		header1 = new Label("Welcome to the ENS-Server Application!");
+		sendButton = new Button("Send Emergency Message");
 		VBox vbox = new VBox(20);
-		HBox hbox = new HBox(20);
-		vbox.getChildren().addAll(title,test);
-		hbox.getChildren().addAll(title,test);
-		scene = new Scene(hbox, 1280, 720);
-		window.setScene(scene);
+		vbox.getChildren().addAll(header1, sendButton);
+		scene1 = new Scene(vbox, 1280, 720);
+		window.setScene(scene1);
 		window.show();
 	}
 

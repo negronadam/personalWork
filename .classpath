@@ -3,5 +3,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/adamn/Downloads/craftbukkit-1.13.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/adamn/Downloads/mailactivation/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Users/adamn/Downloads/mailactivation/mail.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
