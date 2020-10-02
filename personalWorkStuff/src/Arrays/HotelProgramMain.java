@@ -28,6 +28,7 @@ public class HotelProgramMain extends Application {
 	
 	Label title;
 	Stage window;
+	Stage loginSuccess;
 	Scene scene1;
 	Button login;
 	TextField userInput;
@@ -130,6 +131,11 @@ public class HotelProgramMain extends Application {
 		scene1 = new Scene(gridPane1, 1280, 720);
 		window.setScene(scene1);
 		window.show();
+	}
+	
+	public void LoginSuccessful() throws Exception
+	{
+		
 	}
 
 }
