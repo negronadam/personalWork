@@ -1,0 +1,7 @@
+name: SwordCraftOnline
+main: SwordCraftOnline.SCO
+version: 1.0
+commands:
+	Hello:
+	description: Replies with a greeting.
+	usage: /<command>
