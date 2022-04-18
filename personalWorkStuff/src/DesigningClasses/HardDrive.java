@@ -15,7 +15,7 @@ public class HardDrive {
 		
 	}
 	
-	public void addFile(double xSize)
+	public void addFile(String name,double xSize)
 	{
 		if(xSize < freeSpace)
 		{

@@ -14,6 +14,29 @@ public class Arrays1 {
 		}
 		You can use arrays in loops!
 		*/
+			boolean algorithmIsTrue = false;
+		    int[] scores = new int[5];
+		    scores[0] = 1;
+		    scores[1] = 2;
+		    scores[2] = 1;
+		    scores[3] = 7;
+		    scores[4] = 8;
+		    int highest = 0;
+		    for(int a = 0; a < scores.length - 1; a++)
+		    {
+		      if (scores[a] > highest)
+		      {
+		    	System.out.println(scores[a]);
+		        a++;
+		        highest = scores[a];
+		        
+		      }
+		      else
+		      {
+		        System.out.println("There is an issue!");
+		      }
+		    }
+		    System.out.println("Algorithm completed...");
 	}
 
 }
