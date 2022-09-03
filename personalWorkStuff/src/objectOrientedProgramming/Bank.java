@@ -28,12 +28,15 @@ public class Bank extends Application implements EventHandler<ActionEvent> {
 	Button button2;
 	Stage window;
 	Stage checkingWindow;
+	Stage error2;
 	Scene scene1;
 	Scene scene2;
+	Scene error1;
 	Button button;
 	Button makeChecking;
 	TableView<BankChecking> table;
 	TextField nameInput, checkingInput, iDInput;
+	boolean showError1;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -118,9 +121,14 @@ public class Bank extends Application implements EventHandler<ActionEvent> {
 	public void addButtonClicked()
 	{
 		BankChecking checking = new BankChecking();
+		try {
 		checking.setName(nameInput.getText());
 		checking.setBalance(Double.parseDouble(checkingInput.getText()));
 		checking.setId(Integer.parseInt(iDInput.getText()));
+		}
+		catch(Exception e){
+			ErrorClass error = new ErrorClass();
+		}
 		table.getItems().addAll(checking);
 		nameInput.clear();
 		checkingInput.clear();
@@ -132,5 +140,7 @@ public class Bank extends Application implements EventHandler<ActionEvent> {
 		// TODO Auto-generated method stub
 		
 	}
+	
+
 
 }
