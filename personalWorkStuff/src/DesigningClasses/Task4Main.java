@@ -1,8 +1,5 @@
 package DesigningClasses;
 import java.util.Scanner;
-
-import net.minecraft.data.Main;
-
 import java.awt.GraphicsEnvironment;
 import java.io.Console;
 import java.io.IOException;
@@ -15,6 +12,8 @@ public class Task4Main {
 		 *This is the MonarchLink software developed by Adam Negron
 		 *The whole point of this program is to take Monarchs with various variables tied to ranking and the such. 
 		 *The equation to calculate this is as such (The higher the score the better):
+		 *
+		 *MARK PROJECT AS NEXT TO FINISH
 		 */
 		Scanner input = new Scanner(System.in);
 		boolean programIsRunning = true;

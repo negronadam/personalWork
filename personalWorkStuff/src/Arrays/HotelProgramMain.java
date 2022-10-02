@@ -38,7 +38,6 @@ public class HotelProgramMain extends Application {
 		// TODO Auto-generated method stub
 		launch(args);
 		
-		/*
 		Scanner input = new Scanner(System.in);
 		String user = "TestAdmin";
 		String passcode = "TestPass123";

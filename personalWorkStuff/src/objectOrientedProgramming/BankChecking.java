@@ -41,6 +41,10 @@ public class BankChecking {
     public void setId(int xId) {
         this.id = xId;
     }
+    
+    public String getChecking() {
+    	return "This checking account belongs to: " + name + " With a balance of: " + balance + " With an ID of: " + id;
+    }
 	
 	
 	
