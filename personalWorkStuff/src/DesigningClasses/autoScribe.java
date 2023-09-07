@@ -124,19 +124,18 @@ public class autoScribe extends Application {
 		 */
 		logbookCreate = new Button("Create new logbook");
 		graphWindowCreate = new Button("Create new graph");
-		/*TableColumn<Student, String> xAxis = new TableColumn<>("Name");
+		TableColumn<Student, String> xAxis = new TableColumn<>("Name");
 		xAxis.setMinWidth(700);
 		xAxis.setCellValueFactory(new PropertyValueFactory<>("Name"));
-		*/
 		/*
 		TableColumn<Student, String> yAxis = new TableColumn<>("Room");
 		yAxis.setMinWidth(700);
 		yAxis.setCellValueFactory(new PropertyValueFactory<>("Room"));
 		*/
 		
-		//table = new TableView<>();
-		//table.setItems(database.initializeList());
-		//table.getColumns().add(xAxis);
+		table = new TableView<>();
+		table.setItems(database.initializeList());
+		table.getColumns().add(xAxis);
 		/*table.getColumns().add(yAxis);
 		set button functionality. */
 		generate.setOnAction(e -> {
@@ -165,7 +164,7 @@ public class autoScribe extends Application {
 		hBox.setSpacing(10);
 		hBox.getChildren().addAll(text, addToWp, generate, logbookCreate, graphWindowCreate);
 		VBox vBox = new VBox(20);
-		vBox.getChildren().addAll(title, hBox, copyright);
+		vBox.getChildren().addAll(title, table, hBox, copyright);
 		scene1 = new Scene(vBox, 1280, 720);
 		window.setScene(scene1);
 		window.show();
