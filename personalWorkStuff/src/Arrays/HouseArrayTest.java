@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.ArrayList;  
 public class HouseArrayTest {
 
-	public static void main(String[] args) {
+	//public static void main(String[] args) {
 		/*
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
@@ -32,11 +32,47 @@ public class HouseArrayTest {
 		
 		input.close();
 		*/
-		
+		/*
 		while(1==1)
 		{
 			System.o
 		}
-	}
+		*/
+		
+	//}
+	
+	public static String getPhoneNumber(String[] nameArr, String[] phoneNumberArr, String contactName, int arraySize){
+	      for(int a = 0; a < arraySize; a++){
+	         if(nameArr[a].equals(contactName)){
+	            return nameArr[a];
+	         }
+	         else{
+	           return "None"; 
+	         }
+	      }
+	      return "Test";
+	      
+	   }
+	   
+	   public static void main(String[] args) {
+	      Scanner input = new Scanner(System.in);
+	      System.out.print("Input number");
+	      int sizeArr = input.nextInt();
+	      String[] nameArray = new String[sizeArr];
+	      nameArray[0] = "John,117";
+	      String[] phoneArray = new String[sizeArr];
+	      for(int a = 0; a < nameArray.length - 1; a++) {
+	    	  for(int b = 0; b < nameArray[a].length(); a++) {
+	    		  if(nameArray[a].charAt(b) == ',') {
+	    			  phoneArray[a] = nameArray[a].substring(b);
+	    		  }
+	    	  }
+	      }
+	      System.out.println(phoneArray[0]);
+	      System.out.println("Input name to find...");
+	      String contact = input.next();
+	      //System.out.println(getPhoneNumber(nameArray, phoneArray, contact, sizeArr));
+	      
+	   }
 
 }

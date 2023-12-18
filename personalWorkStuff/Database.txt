@@ -1,0 +1,12 @@
+DesignerJeans 40 34.95
+Shirt 20 24.95
+
+
+Jacket 
+Jacket 12.0 59.95
+Jacket 12 
+Jacket 12 $59.95
+Jacket -12 59.95
+Jacket 12 -59.95
+Jacket 12 59.95  xyz
+Jacket 12 59.95

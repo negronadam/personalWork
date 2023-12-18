@@ -4,6 +4,7 @@ public class StringArrays {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		/*
 		Scanner input = new Scanner(System.in);
 		String[] friends = new String[5];
 		for(int i = 0; i < friends.length; i++)
@@ -16,6 +17,13 @@ public class StringArrays {
 		{
 			System.out.println(friends[a]);
 		}
+		*/
+		
+		String word = "Hello";
+        for(int a = word.length() - 1; a >= 0; a--)
+        {
+            System.out.println(word.charAt(a));
+        }
 	}
 
 }
