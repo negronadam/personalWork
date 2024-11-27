@@ -108,7 +108,7 @@ public class autoScribe extends Application {
 	{
 		Calendar cal = Calendar.getInstance();
 		System.out.println("The date is: " + cal.getTime());
-		Bot bot = new Bot("e45662a5d9388fff7574998ff3");
+		//Bot bot = new Bot("e45662a5d9388fff7574998ff3");
 		
 		window = primaryStage;
 		primaryStage.setTitle("autoScribe v0.0.1.0a"

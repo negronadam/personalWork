@@ -105,7 +105,7 @@ public class WorkingPartyGUI extends StudentDatabase{
 		}
 		*/
 	}
-	/*
+	
 	public void start(Stage primaryStage) throws Exception
 	{
 		window = primaryStage;
@@ -120,7 +120,7 @@ public class WorkingPartyGUI extends StudentDatabase{
 		window.setScene(scene1);
 		window.show();
 	}
-	*/
+
 	public static ObservableList<String> convertNames()
 	{
 		listString = FXCollections.observableArrayList();
